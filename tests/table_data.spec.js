@@ -6,4 +6,4 @@ test('should log in with env config', async ({ page }) => {
   
     await expect(page).toHaveURL('https://testpolly.elucidata.io/manage/omixatlas');
   });
-  
+  //updated

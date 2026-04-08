@@ -26,3 +26,4 @@ test('Locators',async  ({page})=>{
 
 })
  
+//updated

@@ -17,3 +17,4 @@ test('Search for iPhone 17 Pro on Amazon and take screenshot', async ({ page }) 
   // Take a screenshot of the search results
   await page.screenshot({ path: 'amazon-iphone-17-pro-search.png', fullPage: true });
 });
+//sample test

@@ -1,0 +1,22 @@
+import { Page, Locator } from '@playwright/test';
+import { BasePage } from './BasePage';
+
+export class __ClassName__Page extends BasePage {
+  // Declare one readonly Locator per element this page interacts with or
+  // asserts on. Build them here, in the constructor, so every method reuses
+  // the same locator instead of re-querying the page.
+  // Priority: getByRole > getByLabel/getByPlaceholder > getByText >
+  // getByTestId > CSS/XPath (see the selector-strategy skill).
+  readonly __exampleLocator__: Locator;
+
+  constructor(page: Page) {
+    super(page);
+    this.__exampleLocator__ = page.getByRole('button', { name: '__Example__' });
+  }
+
+  // One method per user action or focused query. Keep each one doing
+  // exactly one thing so a spec reads as a clear sequence of steps.
+  async __exampleAction__() {
+    await this.__exampleLocator__.click();
+  }
+}

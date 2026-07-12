@@ -1,0 +1,15 @@
+import { test, expect } from '@playwright/test';
+import { __ClassName__Page } from '../../pages/__ClassName__Page';
+
+test.describe('__FlowName__', () => {
+  test('__scenario description__', async ({ page }) => {
+    const __instanceName__ = new __ClassName__Page(page);
+    await __instanceName__.goto('__url__');
+
+    // Drive the scenario through Page Object methods only — no raw
+    // page.locator/page.click/page.fill calls here.
+    await __instanceName__.__exampleAction__();
+
+    await expect(__instanceName__.__exampleLocator__).toBeVisible();
+  });
+});

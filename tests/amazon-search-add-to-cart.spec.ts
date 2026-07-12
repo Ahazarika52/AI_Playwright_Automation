@@ -22,3 +22,4 @@ test('Search and add iPhone 17 Pro to cart on Amazon', async ({ page }) => {
   const confirmationText = await page.textContent('#huc-v2-order-row-confirm-text');
   expect(confirmationText).toContain('Added to Cart');
 });
+//sample test

@@ -38,3 +38,4 @@ class LoginPage {
 }
 
 export {LoginPage}
+//new changes

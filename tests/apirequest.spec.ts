@@ -19,3 +19,4 @@ test("Get request" , async ({request}) => {
   console.log(await response.json())   
   console.log(await response.headers()) 
 })
+//api tests
